@@ -1,0 +1,26 @@
+<div class="relative bg-cover bg-sky-400 w-full h-screen  ">
+  <div class="w-full absolute top-0 h-screen ">
+   <div class="container mx-auto mt-20">
+     <div class="bg-slate-100 max-w-lg w-full m-auto px-10 py-10">
+       <div class="max-w-md mx-auto ">
+         <div class="text-center">
+          <h1 class="text-4xl font-extrabold ">TODOLIST</h1>
+         </div>
+           <div class="mt-4 w-full flex">
+             <input type="text" placeholder=" What needs to be done?" #task class="text-gray-600 font-bold w-full" >
+             <span (click)="addTask(task.value)"><i class="fa fa-plus bg-sky-400 text-white px-3 py-4 ml-1"></i></span>
+           </div>
+
+           <div class="mt-5" >
+           <ul *ngFor="let item of list" class="flex justify-between w-full">
+             <li class="text-sky-400 font-bold pt-2">
+              {{ item.name }}
+             </li>
+             <span (click)="deleteTAsk(item.id)"><i class="fa fa-times text-red-500 cursor-pointer"></i></span>
+           </ul>
+         </div>
+        </div>
+     </div>
+   </div>
+  </div>
+ </div>

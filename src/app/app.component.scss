@@ -1,0 +1,6 @@
+input{
+  @apply   ring-yellow-600 focus:outline-none focus:border-yellow-600 ring-1 hover:ring-sky-400 px-2 py-2
+}
+::-webkit-input-placeholder {
+  @apply text-center italic font-semibold;
+}
